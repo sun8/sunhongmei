@@ -1,0 +1,100 @@
+/*背景*/
+.warp{
+	width: auto;
+	height: 670px;
+	background-color:#eee ;
+	position: relative;
+}
+/*画布*/
+#canvas{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	border: 1px solid #000;
+	z-index: 3;
+}
+/*侧边栏*/
+#sidebar{
+	width: 42px;
+	position: absolute;
+	left: 0;
+	top: 90px;
+}
+.share{
+	width: 42px;
+	height: 105px;
+	background: url(../img/share.png) no-repeat;
+	margin-bottom: 26px;
+}
+.my{
+	width: 42px;
+	height: 115px;
+	background: url(../img/gallery_link2.png) no-repeat;
+}
+/*点击按钮*/
+#btn{
+	width: 178px;
+	position: absolute;
+	left:60%;
+	bottom: 190px;
+	transition: 1s;
+	z-index: 1;
+	opacity:0;
+}
+#yes{
+	float: left;
+	width: 127px;
+	height: 52px;
+	background: url(../img/yes.png);
+}
+#no{
+	float: left;
+	width: 51px;
+	height: 52px;
+	background: url(../img/no.png);
+}
+/*开始画小人*/
+#start{
+	width: 487px;
+	height: 412px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	margin: auto;
+}
+#point{
+	width: 184px;
+	height: 110px;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	transition: 1s;
+	background: url(../img/point.png) no-repeat;
+}
+#cloth{
+	width: 303px;
+	height: 301px;
+	position: absolute;
+	left: 184px;
+	top: 0;
+	transition: 1s;
+	background: url(../img/cloth.png) no-repeat;
+}
+/*顶部图片*/
+#titlebar{
+	width: 1014px;
+	height: 97px;
+	position: absolute;
+	left:0;
+	right: 0;
+	top:-90px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 3s;
+	background: url(../img/titlebar.png) no-repeat;
+}

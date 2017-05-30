@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{ background:black;}
+#c1{ background:white;}
+</style>
+<script>
+
+window.onload = function(){
+	var oC = document.getElementById('c1');
+	var oGC = oC.getContext('2d');
+	
+	function toDraw(){
+		
+		var x = 200;
+		var y = 200;
+		var r = 150;
+		//清除画布
+		oGC.clearRect(0,0,oC.width,oC.height);
+		//时间戳
+		var oDate = new Date();
+		var oHours = oDate.getHours();
+		var oMin = oDate.getMinutes();
+		var oSen = oDate.getSeconds();
+		//根据时间戳算出当前的角度和弧度
+		var oHoursValue = (-90 + oHours*30 + oMin/2) * Math.PI/180;
+		var oMinValue = (-90 + oMin*6) * Math.PI/180;
+		var oSenValue = (-90 + oSen*6) * Math.PI/180;
+		
+		
+		/*oGC.moveTo(x,y);
+		
+		oGC.arc(x,y,r,0,6*Math.PI/180,false);
+		
+		oGC.moveTo(x,y);
+		
+		oGC.arc(x,y,r,6*Math.PI/180,12*Math.PI/180,false);*/
+		//开始
+		oGC.beginPath();
+		
+		for(var i=0;i<60;i++){
+			//画笔移动到中心点
+			oGC.moveTo(x,y);
+			//指向半径，起始点，顺时针
+			oGC.arc(x,y,r,6*i*Math.PI/180,6*(i+1)*Math.PI/180,false);
+		}
+		//结束
+		oGC.closePath();
+		//线显现
+		oGC.stroke();
+		
+		
+		//设置绘图，白色的背景
+		oGC.fillStyle = 'white';
+		//开始画
+		oGC.beginPath();
+		//移动到中心
+		oGC.moveTo(x,y);
+		//画一个圆，并且半径要小
+		oGC.arc(x,y,r*19/20,0,360*Math.PI/180,false);
+		//结束
+		oGC.closePath();
+		//填充颜色，块体显现
+		oGC.fill();
+		
+		//一根3px粗的线
+		oGC.lineWidth = 3;
+		//开始画
+		oGC.beginPath();
+		//12个刻度
+		for(var i=0;i<12;i++){
+			oGC.moveTo(x,y);
+			oGC.arc(x,y,r,30*i*Math.PI/180,30*Math.PI/180,false);
+		}
+		//结束
+		oGC.closePath();
+		//线的显现
+		oGC.stroke();
+		
+		//白快
+		oGC.fillStyle = 'white';
+		
+		oGC.beginPath();
+		
+		oGC.moveTo(x,y);
+		oGC.arc(x,y,r*18/20,0,360*Math.PI/180,false);
+		
+		oGC.closePath();
+		//块显现
+		oGC.fill();
+		
+		//时针
+		oGC.lineWidth = 5;
+		
+		oGC.beginPath();
+		oGC.moveTo(x,y);
+		
+		oGC.arc(x,y,r*10/20,oHoursValue,oHoursValue,false);
+		
+		oGC.closePath();
+		oGC.stroke();
+		//分针
+		oGC.lineWidth = 3;
+		oGC.beginPath();
+		oGC.moveTo(x,y);
+		
+		oGC.arc(x,y,r*14/20,oMinValue,oMinValue,false);
+		
+		oGC.closePath();
+		oGC.stroke();
+		
+		//秒针
+		oGC.lineWidth = 1;
+		oGC.beginPath();
+		oGC.moveTo(x,y);
+		
+		oGC.arc(x,y,r*19/20,oSenValue,oSenValue,false);
+		
+		oGC.closePath();
+		oGC.stroke();
+		
+		
+	}
+	//每个一秒执行一次绘画
+	setInterval(toDraw,1000);
+	
+	toDraw();
+	
+};
+
+</script>
+</head>
+
+<body>
+<canvas id="c1" width="400" height="400"></canvas>
+</body>
+</html>
