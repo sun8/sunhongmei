@@ -1,0 +1,132 @@
+body,
+dd,
+dl,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 0.55rem;
+}
+/*整个*/
+.wrap {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding-bottom: 2.15rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*头部*/
+.head {
+  width: 100%;
+  height: 1.6rem;
+  background-color: #ed6460;
+  position: relative;
+}
+/*头部导航*/
+.logo {
+  float: left;
+  width: 4.125rem;
+  height: 0.675rem;
+  font-size: 0;
+  margin: 0.45rem 0 0.375rem 0.525rem;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 100% 100%;
+}
+.download {
+  border: 0.05rem solid #ffffff;
+  border-radius: 0.15rem;
+  width: 2.05rem;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  color: #fff;
+  display: block;
+  float: left;
+  margin: 0.3rem 0.375rem;
+  font-size: 0.5rem;
+  text-align: center;
+}
+.headR {
+  float: right;
+  width: 3.75rem;
+}
+.search {
+  color: #fff;
+  width: 1.15rem;
+  height: 1.5rem;
+  line-height: 1.45rem;
+  padding-left: 0.75rem;
+  background-size: contain;
+  font-size: 0.55rem;
+  background: url(../img/search.png) 0 no-repeat;
+}
+.sep {
+  float: left;
+  height: 0.75rem;
+  border-left: solid 0.05rem #ffffff;
+  margin: 0.375rem;
+  margin-right: 0.2rem;
+}
+.account {
+  background: url(../img/account.png) 0 0 no-repeat;
+  height: 1.5rem;
+  width: 1.125rem;
+  background-size: contain;
+  font-size: 0;
+  background-position: 0.25rem 0;
+}
+/*头部菜单*/
+.menu {
+  position: relative;
+  background-color: #fff;
+  padding: 0.15rem 0;
+  margin-bottom: 0.3rem;
+}
+.menu li {
+  float: left;
+  width: 25%;
+  height: 1.2rem;
+  font-size: 0.6rem;
+  text-align: center;
+  color: #3b352d;
+}
+.menu a {
+  width: 2.25rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  display: block;
+  text-align: center;
+  margin: 0.15rem auto;
+}
+.menu .recharge {
+  width: 2.65rem;
+  background: url(../img/recharge.png) 0 -0.05rem no-repeat;
+  background-size: contain;
+}
+/*banner图*/
+.banner {
+  height: 6.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.ban_list {
+  height: 6.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ban_list li {
+  width: 16rem;
+  height: 6.5rem;
+  float: left;
+  height: 100%;
+}
+.ban_list img {
+  width: 100%;
+  height: 100%;
+}
