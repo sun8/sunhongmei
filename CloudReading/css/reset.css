@@ -10,9 +10,10 @@ ol,ul{
 	list-style:none;
 	}
 strong,b,h1,h2,h3,h4,h5,h6{
-	font-weight:normal;
+	font-weight: bold;
 	}
 em,i{
+	font-weight: bold;
 	font-style:normal;
 	}
 a{
@@ -47,7 +48,30 @@ input,textarea,select,option,fieldset,legend{
 	background:none ;
 	vertical-align: top;
 }
-	
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}*/
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
 
 
 

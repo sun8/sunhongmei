@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<title>网易云阅读-海量免费小说、图书，免费畅读</title>
+<meta name="keywords" content="小说，免费小说，热门小说，言情小说，官场小说，图书，网易，阅读，网易云阅读">
+<meta name="description" content="网易云阅读提供丰富的原创小说、畅销好书、热门新闻和文章免费在线阅读和下载。包括文学、传记、艺术、经济管理，官场小说、都市小说、言情小说，热血漫画，旅游、电影杂志等。手机上支持Android、iPhone、iPad、Android Pad、Windows Phone、Windows8等多平台免费下载！">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="baidu-site-verification" content="CRenNon4I4" />
+<script type="text/javascript">
+    var matchRule = 'fromtag=iphoneapp';
+    var searchArr = location.search.substr(1).split('&');
+    for (var i=0;i<searchArr.length;i++) {
+        if (searchArr[i] == matchRule) {
+            var metaEl = document.createElement('meta')
+            metaEl.name='apple-itunes-app'
+            metaEl.content = 'app-id=462186890';
+            document.head.appendChild(metaEl)
+        }
+    }
+    </script>
+<link type="text/css" rel="stylesheet" href="//yuedust.yuedu.126.net/assets/mobile/css/mobi_base.css?20170603163945"/>
+<link type="text/css" rel="stylesheet" href="//yuedust.yuedu.126.net/assets/mobile/lib/Swiper3/css/swiper-3.3.1.min.css?20170603163945">
+<link type="text/css" rel="stylesheet" href="//yuedust.yuedu.126.net/assets/mobile/css/mobi_index_v2.7.css?20170603163945"/>
+<link rel="shortcut icon" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon.ico" />
+<!-- Standard iPhone -->  
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+<!-- Retina iPhone -->  
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+<!-- Standard iPad -->  
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" />  
+<!-- Retina iPad -->  
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" /> 
+</head>
+<body>
+    <div class="g-wrap">
+        <header class="level1">
+        <section class="f-cb">
+            <h1 class="logo"></h1>
+            <a href="/client" class="download J_downloadbtn" onclick="_gaq.push(['_trackEvent', 'home', 'navi','client'])">下载APP</a>
+            <div class="f-cb f-fr">
+            	<a href="/search/form.do"  class="search f-fl" onclick="_gaq.push(['_trackEvent', 'home', 'navi','search'])">搜索</a>
+            	<i class="sep f-fl"></i>
+            	<a href="/myinfo.do" class="account f-fl" onclick="_gaq.push(['_trackEvent','home', 'navi', 'account'])">帐户</a>    
+            </div>
+        </section>
+        <ul class="menu f-cb">
+        	<li>
+            	<a  href="/yc" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'man'])">男频</a>
+            </li>
+            <li>
+            	<a href="/ycmm" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'woman'])">女频</a>
+            </li>
+            <li>
+            	<a  href="/book" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'publish'])">出版</a>
+            </li>
+            <li>
+            	<a  href="/category" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'bookstore'])">分类</a>
+            </li>
+            <li>
+            	<a href="/free" onclick="_gaq.push(['_trackEvent','home', 'tab', 'freechanel'])">免费</a>
+            </li>
+            <li>
+            	<a  href="/taste" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'taste'])">口味</a>
+            </li>
+            <li>
+            	<a  href="/rank" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'ranking'])">排行</a>
+            </li>
+            <li>
+            	<a href="/recharge/form.do" class="recharge" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'recharge'])">充值</a>
+            </li>           
+        </ul>
+    </header>
+<!--
+<header class="level1">
+            <section class="f-cb">
+                <h1 class="logo"></h1>
+                <ul class="f-cb">
+                <li class="sj"><a href="/shelf/read.do" onclick="_gaq.push(['_trackEvent', 'home', 'navi', 'bookshelf'])">书架</a></li>
+                <li class="zh"><a href="/myinfo.do" onclick="_gaq.push(['_trackEvent', 'home', 'navi', 'account'])">帐户</a></li>
+                <li class="dh"><a href="/client" onclick="_gaq.push(['_trackEvent', 'home', 'navi', 'client'])">客户端</a></li>
+                </ul>
+            </section>
+            <nav class="menu f-cb">
+                <a href="/yc" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'man'])">男频</a>
+                <a href="/ycmm" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'woman'])">女频</a>
+                <a href="/book" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'publish'])">出版</a>
+                <a href="/category" onclick="_gaq.push(['_trackEvent', 'home', 'tab', 'bookstore'])">分类</a>
+                <b></b>
+            </nav>
+        </header>
+        <section class="m-search">
+            <form id="J_Form" action="/search/book.do" method="get">
+                <div class="search-input">
+                    <div class="inner f-cb">    
+                        <input name="key" id="search-input" autocomplete="off" placeholder="搜索数十万好书">
+                        <button>搜索<i></i></button>
+                        <a class="delete" href="/"></a>
+                    </div>
+                </div>
+            </form>
+        </section>-->
+         <div class="m-last-book f-cb">
+          <a href="" class="j-gap last-book" onclick="_gaq.push(['_trackEvent', 'homepage', 'totalrecentread_click'])" ></a>
+          <a href="/shelf/read.do" class="shelf" onclick="_gaq.push(['_trackEvent', 'homepage', 'bookshelf_click'])" >书架</a> 
+          <i class="sep"></i>
+        </div>
+        <section class="m-list-box">
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">重磅推荐</span></div>
+                <a href="/column/1002.do" class="more j-gap" data-category="Category_boy" data-action="zbtj_click"  data-label="more" >更多<em class="m-arrow"></em></a>
+            </h3>
+            <ul class="m-book-list f-cb">
+                                <li>
+                    <a href="    /reader/book/bd_9071b00cae784548848e25d3fa07c14e_4/fenghuang_3042697_11175778_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="1" class="j-gap pic"><img src="https://easyreadfs.nosdn.127.net/R1k9JhYHoRrEeL2xLS0Q3Q==/8796093022455705852?imageView&thumbnail=240y336" srcset="https://easyreadfs.nosdn.127.net/R1k9JhYHoRrEeL2xLS0Q3Q==/8796093022455705852?imageView&thumbnail=240y336 2x, https://easyreadfs.nosdn.127.net/R1k9JhYHoRrEeL2xLS0Q3Q==/8796093022455705852?imageView&thumbnail=360y504 3x"/></a>
+                    <a href="    /reader/book/bd_9071b00cae784548848e25d3fa07c14e_4/fenghuang_3042697_11175778_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="1" class="j-gap info">
+                        <h4>一号红人</h4>
+                        <p>山间老寺</p>
+                    </a>
+                </li>
+                                <li>
+                    <a href="    /reader/book/9cc63831542a4bd5aca2c6e4ca7bd05b_4/89aa27dd1a9841608c5135b36792dd8f_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="2" class="j-gap pic"><img src="https://easyreadfs.nosdn.127.net/V_nv7W6Qf-UTL40642dlGA==/8796093022262715633?imageView&thumbnail=240y336" srcset="https://easyreadfs.nosdn.127.net/V_nv7W6Qf-UTL40642dlGA==/8796093022262715633?imageView&thumbnail=240y336 2x, https://easyreadfs.nosdn.127.net/V_nv7W6Qf-UTL40642dlGA==/8796093022262715633?imageView&thumbnail=360y504 3x"/></a>
+                    <a href="    /reader/book/9cc63831542a4bd5aca2c6e4ca7bd05b_4/89aa27dd1a9841608c5135b36792dd8f_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="2" class="j-gap info">
+                        <h4>绝世高手</h4>
+                        <p>我自对天笑</p>
+                    </a>
+                </li>
+                                <li>
+                    <a href="    /reader/book/bd_56d8c889ffd74ddcbaa9bde864d91f00_4/zhulang_224130_316763_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="3" class="j-gap pic"><img src="https://easyreadfs.nosdn.127.net/SbEMSpdQaxBtsQdeeFtEKA==/7917010386059158916?imageView&thumbnail=240y336" srcset="https://easyreadfs.nosdn.127.net/SbEMSpdQaxBtsQdeeFtEKA==/7917010386059158916?imageView&thumbnail=240y336 2x, https://easyreadfs.nosdn.127.net/SbEMSpdQaxBtsQdeeFtEKA==/7917010386059158916?imageView&thumbnail=360y504 3x"/></a>
+                    <a href="    /reader/book/bd_56d8c889ffd74ddcbaa9bde864d91f00_4/zhulang_224130_316763_4
+    " data-category="Category_boy" data-action="zbtj_img_click"  data-label="3" class="j-gap info">
+                        <h4>绝世武神</h4>
+                        <p>净无痕</p>
+                    </a>
+                </li>
+                            </ul>
+            <div class="m-book-item">
+                <ul>
+                                        <li>
+                    <a href="    /reader/book/a6bc87d3962f4ee6a39e9a2763f99809_4/531a4f6519a04f2da900c6743088923d_4
+    " data-category="Category_boy" data-action="zbtj_txt_click"  data-label="1" class="j-gap">
+                        <h4>[权力]桃运仕途：我的美女领导</h4>
+                        <p>被打压流放却开始真正的仕途之路，美女接踵而至！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/4b015d922d4f4875b0845f8749b0122e_4/b6a4c3f0752f4561b722eee3e02028c5_4
+    " data-category="Category_boy" data-action="zbtj_txt_click"  data-label="2" class="j-gap">
+                        <h4>[玄幻]灭世武修</h4>
+                        <p>未婚妻下毒手，他一夜之间天才变为废柴！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/09ff97ca5ffc4a41a1e32a12547917d8_4/837dff3ce71a43e1a380145fbc0d0d0e_4
+    " data-category="Category_boy" data-action="zbtj_txt_click"  data-label="3" class="j-gap">
+                        <h4>[热血]奇门弄宝</h4>
+                        <p>偶得奇门之术和阴阳透视眼，踏上别样人生征途。</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_36bacd44cd054ec8a9947401db55f623_4/4427dc1714634b37984db9c16cf370ae_4
+    " data-category="Category_boy" data-action="zbtj_txt_click"  data-label="4" class="j-gap">
+                        <h4>[悬疑]我当算命先生那几年</h4>
+                        <p>以我算卦的那些年，向你展示中国传统文化魅力。</p>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>   
+            
+        </section>
+        <div class="swiper-container" style="margin-top: -27px;" >
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="    /subject/4c93ec5fdfb345b7a9896c21890e040b
+    " data-category="Category_boy" data-action="banner_loop_click"  data-label="1" class="j-gap" ><img src="https://img4.cache.netease.com/news/2017/5/31/20170531184116f8d53.jpg" alt="当然是选择原谅她" ></a></div>                
+                            <div class="swiper-slide"><a href="    /source/3a9065a11e3f47d2951e795af26268e8_4
+    " data-category="Category_boy" data-action="banner_loop_click"  data-label="2" class="j-gap" ><img src="https://img5.cache.netease.com/news/2017/6/1/2017060120474982d8a.jpg" alt="神术灵医" ></a></div>                
+                            <div class="swiper-slide"><a href="    /subject/9d5192bded58409b97fc4973a33e9afa
+    " data-category="Category_boy" data-action="banner_loop_click"  data-label="3" class="j-gap" ><img src="https://img3.cache.netease.com/news/2017/5/25/20170525191915a0fe0.jpg" alt="捡到上古神器" ></a></div>                
+                        </div>            
+        </div>
+<!--
+        <div class="m-promotion">
+                <a href="/subject/4c93ec5fdfb345b7a9896c21890e040b" title="当然是选择原谅她" class="sbanner"><span>推广</span>当然是选择原谅她</a>
+                <a href="/source/3a9065a11e3f47d2951e795af26268e8_4" title="神术灵医" class="sbanner"><span>推广</span>神术灵医</a>
+                <a href="/subject/9d5192bded58409b97fc4973a33e9afa" title="捡到上古神器" class="sbanner"><span>推广</span>捡到上古神器</a>
+                </div>
+-->
+        <section class="m-list-box">
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">限时畅读</span></div>
+                                <div class="m-freecount f-fl J_TimeLeft"  date="2017-06-05 12:00"><b>00</b>:<b>00</b>:<b>00</b></div>
+                                 <a href="/limitread.do?type=male" class="more j-gap"  data-category="Category_boy" data-action="xsmf_click"  data-label="more">更多<em class="m-arrow"></em></a>
+            </h3>            
+            <ul class="m-free-list">
+                               <li>
+                    <a href="    /reader/book/bd_a58b54bf8bde4c44beef3fc451973e0c_4/chonline_605997_2_4
+    "  data-category="Category_boy" data-action="xsmf_click"  data-label="1" class="j-gap f-cb" title=" 妖孽兵王">
+                         <img src="https://img2.cache.netease.com/news/2017/6/1/20170601204523bacff.jpg?imageView&thumbnail=150y210" srcset="https://img2.cache.netease.com/news/2017/6/1/20170601204523bacff.jpg?imageView&thumbnail=150y210 2x, https://img2.cache.netease.com/news/2017/6/1/20170601204523bacff.jpg?imageView&thumbnail=225y315 3x" alt=" 妖孽兵王">
+                         <h3> 妖孽兵王</h3>
+                         <p>笔仙在梦游/都市生活</p>                    
+                         <p>重回都市，本想安逸生活，却卷进地下势力倾轧之中！</p>
+                         <p>限时畅读<del>3300阅点</del></p>
+                    </a> 
+                </li>
+                                <li>
+                    <a href="    /reader/book/bd_3686318c846049269a13b9c5e062fefd_4/zhulang_179331_735104_4
+    "  data-category="Category_boy" data-action="xsmf_click"  data-label="2" class="j-gap f-cb" title="仙噬">
+                         <img src="https://img5.cache.netease.com/news/2017/6/1/20170601204506707ea.jpg?imageView&thumbnail=150y210" srcset="https://img5.cache.netease.com/news/2017/6/1/20170601204506707ea.jpg?imageView&thumbnail=150y210 2x, https://img5.cache.netease.com/news/2017/6/1/20170601204506707ea.jpg?imageView&thumbnail=225y315 3x" alt="仙噬">
+                         <h3>仙噬</h3>
+                         <p>颓废的烟121/玄幻仙侠</p>                    
+                         <p>凭借着逆天的吞噬灵根，他步步为营，朝着天道最顶端靠近！</p>
+                         <p>限时畅读<del>14000阅点</del></p>
+                    </a> 
+                </li>
+                                <li>
+                    <a href="    /reader/book/e1d956102c10459f885ae325e14aa256_4/d720346fad9c43d3834a2c7b441acbb7_4
+    "  data-category="Category_boy" data-action="xsmf_click"  data-label="3" class="j-gap f-cb" title="深圳迷城">
+                         <img src="https://easyreadfs.nosdn.127.net/bjO2sZ3D76GUTbLlD2wqPw==/7696602285153117318?imageView&thumbnail=150y210" srcset="https://easyreadfs.nosdn.127.net/bjO2sZ3D76GUTbLlD2wqPw==/7696602285153117318?imageView&thumbnail=150y210 2x, https://easyreadfs.nosdn.127.net/bjO2sZ3D76GUTbLlD2wqPw==/7696602285153117318?imageView&thumbnail=225y315 3x" alt="深圳迷城">
+                         <h3>深圳迷城</h3>
+                         <p>仰者观望于天/官场职场</p>                    
+                         <p>我们的爱欲情仇，挣扎，奋斗，梦想……都发生在这里。</p>
+                         <p>限时畅读<del>11000阅点</del></p>
+                    </a> 
+                </li>
+                                           
+            </ul>          
+        </section>
+        <section class="m-list-box">           
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">都市爽文</span></div>
+                <a href="/column/3001.do" class="more j-gap" data-category="Category_boy" data-action="dssw_click"  data-label="more">更多<em class="m-arrow"></em></a>
+            </h3> 
+            <div class="m-book-single f-cb">
+                               <a href="    /reader/book/bd_5cf72873aa224ca4887ff152fb73a5ed_4/c49b67ad474744f39830dcee96fc51d9_4
+    " data-category="Category_boy" data-action="dssw_img_click"  data-label="1" class="j-gap" title="桃运神戒">
+                    <img src="https://easyreadfs.nosdn.127.net/YxcA3si876Thwhd500h0fw==/8796093022997788091?param=200x0&type=1.jpg?imageView&thumbnail=150y210" srcset="https://easyreadfs.nosdn.127.net/YxcA3si876Thwhd500h0fw==/8796093022997788091?param=200x0&type=1.jpg?imageView&thumbnail=150y210 2x, https://easyreadfs.nosdn.127.net/YxcA3si876Thwhd500h0fw==/8796093022997788091?param=200x0&type=1.jpg?imageView&thumbnail=225y315 3x" alt="桃运神戒">
+                    <h3>桃运神戒</h3>
+                    <p>不是蚊子/都市生活</p>                    
+                    <p>获得神奇戒指，各色美女闯入我的生活，好烦恼！</p>
+                </a>
+                            </div>
+            <div class="m-book-item">
+                <ul>
+                                        <li>
+                    <a href="    /reader/book/c362420ee3d94c0a9b9b932d01446349_4/05699f140e9e411fb69704ae839438d7_4
+    " data-category="Category_boy" data-action="dssw_txt_click"  data-label="1" class="j-gap">
+                        <h4>[重生]都市之最强修仙</h4>
+                        <p>这一世我纵横都市，踏上巅峰，灭杀强敌，不留遗憾…</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_46374d2112ac47b696a6e6d0a3884a08_4/9fc35ec17b1746ebae32a68b0867cb87_4
+    " data-category="Category_boy" data-action="dssw_txt_click"  data-label="2" class="j-gap">
+                        <h4>[都市]传奇再现</h4>
+                        <p>兄弟何意？我与你并肩，那你就是我的兄弟！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/cef68512bbe5437aa431714365e9f4de_4/56c9cefc81f64b62acd3d5895745a707_4
+    " data-category="Category_boy" data-action="dssw_txt_click"  data-label="3" class="j-gap">
+                        <h4>[种田]神奇小村长</h4>
+                        <p>站在村口望一望，家家都有丈母娘！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bc34875450394b3f9a7c43b13fc22787_4/77211c2000a74660a03720d4f749fbae_4
+    " data-category="Category_boy" data-action="dssw_txt_click"  data-label="4" class="j-gap">
+                        <h4>[美女]师娘，别玩火</h4>
+                        <p>一堆人打美艳师娘的主意，要怎么才能保住师娘呢？</p>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>
+        </section>
+ 
+        <section class="m-list-box">           
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">官场职场</span></div>
+                <a href="/column/3.do" class="more j-gap" data-category="Category_boy" data-action="gczc_click"  data-label="more" >更多<em class="m-arrow"></em></a>
+            </h3> 
+            <div class="m-book-single f-cb">
+                               <a href="    /reader/book/6e8887b6707c43aba69b73ac57f47924_4/0660f42a965e4ae793674494da78b229_4
+    " data-category="Category_boy" data-action="gczc_img_click"  data-label="1" class="j-gap" title="青云记">
+                    <img src="https://easyreadfs.nosdn.127.net/KWikbFU-BPBWwTOV0NBVUQ==/3948812448374688639?imageView&thumbnail=150y210" srcset="https://easyreadfs.nosdn.127.net/KWikbFU-BPBWwTOV0NBVUQ==/3948812448374688639?imageView&thumbnail=150y210 2x, https://easyreadfs.nosdn.127.net/KWikbFU-BPBWwTOV0NBVUQ==/3948812448374688639?imageView&thumbnail=225y315 3x" alt="青云记">
+                    <h3>青云记</h3>
+                    <p>忆秋/官场职场</p>                    
+                    <p>一次同学聚会，偶然的邂逅，人生便华丽的逆袭！</p>
+                </a>
+                            </div>
+            <div class="m-book-item">
+                <ul>
+                                        <li>
+                    <a href="    /reader/book/bd_17efd68e3b604290b03e76e7ef5079b3_4/zhulang_147163_759097_4
+    " data-category="Category_boy" data-action="gczc_txt_click"  data-label="1" class="j-gap">
+                        <h4>[仕途]当官记</h4>
+                        <p>公务员的“纸牌屋”，最接近现实真相的官场小说。</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_40359ab53cc94bff85a08bda56840e15_4/cd1d2fab36a4494889e0069bba703ddb_4
+    " data-category="Category_boy" data-action="gczc_txt_click"  data-label="2" class="j-gap">
+                        <h4>[权谋]宦海特种兵</h4>
+                        <p>退伍特种兵误闯夜总会，与警花发生小小的“误会”</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/8eb6e48ed27e46d0ab989e44c1ad379a_4/7c569d51a5974e54a9c45bcde914a398_4
+    " data-category="Category_boy" data-action="gczc_txt_click"  data-label="3" class="j-gap">
+                        <h4>[爽文]都市奇门医仙</h4>
+                        <p>无业游民偶然玉石，玉中老怪扶持，开启霸业之路。</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/ebc0e800b4ff4541a2da086a6a750cc9_4/cd1c94197571485a82d6cece231ac880_4
+    " data-category="Category_boy" data-action="gczc_txt_click"  data-label="4" class="j-gap">
+                        <h4>[刑侦]都市追凶</h4>
+                        <p>千里追凶手到擒来，五年前的疑案却让他陷入危险！</p>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>
+        </section>
+        <section class="m-list-box f-cb">
+                <a href="    /source/0b51ca525f9946aaafdd99eb30d08055_4
+    " title="花都御医" class="sbanner j-gap"  data-category="Category_boy" data-action="banner_small_click"  data-label="1" ><img src="https://easyread.ph.126.net/zTmG6aX9NCFcZI5OFU-YLQ==/8796093022878224113.jpg"  alt="花都御医" /></a>
+                <a href="    /source/ts_635e7023f3db4d55994214493f07fe70_4
+    " title="鉴宝金瞳" class="sbanner j-gap"  data-category="Category_boy" data-action="banner_small_click"  data-label="2" ><img src="https://easyread.ph.126.net/FCCJV29eu9YG1oT_wngSzg==/8796093022878224469.jpg"  alt="鉴宝金瞳" /></a>
+                </section>
+        <section class="m-list-box">           
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">最新红书</span></div>
+                <a href="/column/2002.do" class="more j-gap" data-category="Category_boy" data-action="zxhs_click"  data-label="more">更多<em class="m-arrow"></em></a>
+            </h3> 
+            <div class="m-book-single f-cb">
+                               <a href="    /reader/book/dbea1e68e5ca46c0b2f21f6d2d8fafc8_4/80c0008c42d54489b737f0997c30d7f6_4
+    " data-category="Category_boy" data-action="zxhs_img_click"  data-label="1" class="j-gap" title="定居唐朝">
+                    <img src="https://easyreadfs.nosdn.127.net/t1NjpKgowM-_ubrWDTWh8Q==/8796093023069541915?imageView&thumbnail=150y210" srcset="https://easyreadfs.nosdn.127.net/t1NjpKgowM-_ubrWDTWh8Q==/8796093023069541915?imageView&thumbnail=150y210 2x, https://easyreadfs.nosdn.127.net/t1NjpKgowM-_ubrWDTWh8Q==/8796093023069541915?imageView&thumbnail=225y315 3x" alt="定居唐朝">
+                    <h3>定居唐朝</h3>
+                    <p>半堕落的恶魔/历史传奇</p>                    
+                    <p>穿越到唐朝，孤身奋斗，这是一个男人的励志史。</p>
+                </a>
+                            </div>
+            <div class="m-book-item">
+                <ul>
+                                        <li>
+                    <a href="    /reader/book/352b676dffc740738dda638c18afe9fb_4/b01c12563d8f48809862c3e5905cda98_4
+    " data-category="Category_boy" data-action="zxhs_txt_click"  data-label="1" class="j-gap">
+                        <h4>[官场]暗香浮爱</h4>
+                        <p>撞见了两个人幽会，从此他的运气便开了挂！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/cc7b70e58dbf4c4f90deb23cb6ce76b1_4/d1e9a39cb4914edb8223f1bbfe28dc34_4
+    " data-category="Category_boy" data-action="zxhs_txt_click"  data-label="2" class="j-gap">
+                        <h4>[都市]我的恶魔美女上司</h4>
+                        <p>意外摸了恶魔女上司的丝袜腿，她却助我一路直抵天堂</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_6aed577729c344b3b30a117ed7a07753_4/tadu_396130_23626055_4
+    " data-category="Category_boy" data-action="zxhs_txt_click"  data-label="3" class="j-gap">
+                        <h4>[玄幻]妖道至尊</h4>
+                        <p>妖皇重生为傻子，利用前世修为，再次妖凛天下！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/e27da437c1e34852a123daa0ac7f0194_4/5cc48bf820b54df4a5cca0ff719eebd6_4
+    " data-category="Category_boy" data-action="zxhs_txt_click"  data-label="4" class="j-gap">
+                        <h4>[寻宝]龙尸</h4>
+                        <p>以雪为被，以山为碑，以天地为棺木，葬龙。</p>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>
+        </section>
+        <section class="m-list-box">           
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">完本精选</span></div>
+                <a href="/column/3002.do" class="more j-gap" data-category="Category_boy" data-action="wbjx_txt_click"  data-label="more">更多<em class="m-arrow"></em></a>
+            </h3> 
+            <div class="m-book-single f-cb">
+                               <a href="    /reader/book/bd_62e4c73ff65e4ac58beb3f4120bdeeab_4/da18760e2c424279867739c380b2d348_4
+    " data-category="Category_boy" data-action="wbjx_img_click"  data-label="1" class="j-gap" title="官道奇才">
+                    <img src="https://easyreadfs.nosdn.127.net/gRi6b1iLW9WaGHC0dAYZVQ==/8796093023339075511?imageView&thumbnail=150y210" srcset="https://easyreadfs.nosdn.127.net/gRi6b1iLW9WaGHC0dAYZVQ==/8796093023339075511?imageView&thumbnail=150y210 2x, https://easyreadfs.nosdn.127.net/gRi6b1iLW9WaGHC0dAYZVQ==/8796093023339075511?imageView&thumbnail=225y315 3x" alt="官道奇才">
+                    <h3>官道奇才</h3>
+                    <p>小楼昨夜轻风/官场职场</p>                    
+                    <p>撞破女领导与局长的奸情，却迎来不一样的人生之路！</p>
+                </a>
+                            </div>
+            <div class="m-book-item">
+                <ul>
+                                        <li>
+                    <a href="    /reader/book/bc167c6ad72542f49f195118049f4530_4/415de2aa422646dcbce042a8f1b4507f_4
+    " data-category="Category_boy" data-action="wbjx_txt_click"  data-label="1" class="j-gap">
+                        <h4>[犯罪]售楼小姐秘密日记</h4>
+                        <p>丈夫暗中调查发现妻子出售的绝不仅是房子那么简单…</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_2362366ebae44b4da12de06b6499bbad_4/3a71348481054cebbfeb4688b0477680_4
+    " data-category="Category_boy" data-action="wbjx_txt_click"  data-label="2" class="j-gap">
+                        <h4>[仙侠]道印</h4>
+                        <p>同修佛道两家无上古经，神游紫微，纵横银河！</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_12752aba17ea4ab6bc677d0b6e99a751_4/d5c4f7f552504001bf4268cd99cb002c_4
+    " data-category="Category_boy" data-action="wbjx_txt_click"  data-label="3" class="j-gap">
+                        <h4>[惊悚]民国三十年灵异档案</h4>
+                        <p>芦苇荡中发现怪异物种浮尸，经鉴定竟是蛟类溺毙。</p>
+                    </a>
+                    </li>
+                                        <li>
+                    <a href="    /reader/book/bd_9452ad8daab1469a83dd698b138dd180_4/9f2dd402ba214f41b2e99a0b10df7f9d_4
+    " data-category="Category_boy" data-action="wbjx_txt_click"  data-label="4" class="j-gap">
+                        <h4>[玄幻]全能修仙系统</h4>
+                        <p>偷看美女洗澡而穿越真武大陆，获得全能修仙系统!</p>
+                    </a>
+                    </li>
+                                    </ul>
+            </div>
+        </section>
+<section class="m-list-box subject-box">            
+            <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">经典排行榜</span></div>
+                <a href="/rank/original/list.do?gender=male&type=sell&sortType=week" class="more j-gap" data-category="Category_boy" data-action="jdph_click"  data-label="more"  >更多<em class="m-arrow"></em></a>              
+            </h3>
+            <ul class="m-book-list f-cb" id="J_sellrank_man">
+            </ul>   
+                  
+        </section>
+        <section class="m-list-box subject-box"> 
+                         <h3 class="f-cb">
+                <div class="f-fl"><em class="sep"></em><span class="gradient">精彩书单</span></div>                
+            </h3>           
+            <div class="m-subject f-cb">
+                 <a href="    /subject/08429348bc8347f58d4d750eb2044404
+    " data-category="Category_boy" data-action="jcsd_click"  data-label="1" class="j-gap" title="不以结婚为目的同居，都是耍流氓！">
+                    <img src="https://img1.cache.netease.com/news/2017/5/17/2017051717492987af4.jpg?imageView&thumbnail=768x0" srcset="https://img1.cache.netease.com/news/2017/5/17/2017051717492987af4.jpg?imageView&thumbnail=768x0 2x, https://img1.cache.netease.com/news/2017/5/17/2017051717492987af4.jpg?imageView&thumbnail=1152x0 3x"  alt="不以结婚为目的同居，都是耍流氓！">
+                    <h3>不以结婚为目的同居，都是耍流氓！</h3>
+                    <p>爱她，就给她一个家！</p>   
+                </a>
+                
+            </div>               
+            <div class="m-book-item">
+                <a href="    /subject/08429348bc8347f58d4d750eb2044404
+    " title="不以结婚为目的同居，都是耍流氓！" data-category="Category_boy" data-action="jcsd_click"  data-label="more" class="j-gap">查看更多书籍<em class="m-arrow"></em></a>
+            </div>
+                    </section>
+<div class="m-bottom-wrap">
+            <section class="m-search m-search-bottom">
+                <form id="J_Form_bottom" action="/search/book.do" method="get">
+                <div class="search-input">
+                    <div class="inner f-cb">  
+                        <input name="key" id="search-input-bottom" autocomplete="off" placeholder="搜索资讯源、书籍、杂志">
+                        <button>搜索</button> 
+                        <a class="delete" href="/"></a>
+                    </div>
+                </div>
+                </form>
+            </section>
+            <div class="ui-line"></div>
+            <div class="m-down-btn">
+                <a href="/download" class="ui-red-light">下载网易云阅读客户端</a>
+            </div>
+<!--
+            <iframe style="width:100%;height:168px;" src="https://g.163.com/r?site=netease&affiliate=yuedu&cat=footer&type=pic710x224_yuedu&location=1" scrolling="no" frameborder="0" allowtransparency=""></iframe>-->
+        </div>
+</div>
+<footer>
+    <nav>
+        <a href="/client">客户端</a>
+        <a href="/help">帮助</a>
+        <a href="https://fankui.163.com/ft/comment.fb?pid=11001">反馈</a>
+        <a href="/" class="cur">触屏版</a>
+        <a href="https://yuedu.163.com/index">电脑版</a>
+    </nav>
+    <div class="m-right"><p>网易公司版权所有&#169;1997-<span id="J_Copyright"></span></p></div>
+</footer>
+<script type="text/javascript">
+    var now = new Date();
+    var year= now.getFullYear();
+    document.getElementById('J_Copyright').innerText = year;
+</script>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-48676860-1'],['_setLocalGifPath', '/UA-48676860-1/__utm.gif'],['_setLocalRemoteServerMode']);
+    _gaq.push(['_addOrganic','baidu','word']);
+    _gaq.push(['_addOrganic','soso','w']);
+    _gaq.push(['_addOrganic','youdao','q']);
+    _gaq.push(['_addOrganic','sogou','query']);
+    _gaq.push(['_addOrganic','so.360.cn','q']);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = 'https://wr.da.netease.com/ga.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+</script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/gmu/js/zepto.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/utils.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/mobi-new.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/search.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/lib/Swiper3/js/swiper-3.3.1.jquery.min.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/art-template.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/index.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/common/menu-control.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/download-tip.js?20170603163945"></script>
+<script type="text/javascript" src="//yuedust.yuedu.126.net/assets/mobile/js/common/hideclientbtn.js?20170603163945"></script>
+<script>
+    template.helper('$filterP', function (content) {
+        return content
+        .replace(/\<p\>/ig, '')
+        .replace(/\<\/p\>/ig, '');
+    });
+</script>
+ <script id="j-template" type="text/html">
+           <% for(var i = 0, length = 3; i < length; i++){ %>
+                <li>
+                    <em><%=(i+1)%></em>
+                    <a href="<%=data.books[i].sourceUrl %>" data-category="Category_boy" data-action="jdph_click"  data-label="<%=(i+1)%>"  class="j-gap pic"><img src="<%=data.books[i].iconUrl %>?imageView&thumbnail=240y336" srcset="<%=data.books[i].iconUrl %>?imageView&thumbnail=240y336 2x, <%=data.books[i].iconUrl %>?imageView&thumbnail=360y504 3x"/></a>
+                    <a href="<%=data.books[i].sourceUrl %>" data-category="Category_boy" data-action="jdph_click"  data-label="<%=(i+1)%>"   class="j-gap info">
+                        <h4><%=data.books[i].title %></h4>
+                        <p><%=$filterP(data.books[i].description) %></p>
+                    </a>
+                </li>                
+            <% } %>
+            </script> 
+<script>
+var WM = new WapManager();
+var MM = new MenuManager();
+MM.menuInit('man');
+WM.sellRank('man','week');
+</script>
+</body>
+</html>
