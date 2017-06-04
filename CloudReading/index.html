@@ -29,7 +29,7 @@
 	<!-- Retina iPad -->  
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" /> 
 </head>
-<body style="height: 105rem;">
+<body style="height: 110rem;">
 	<div class="wrap">
 		<!--header--start-->
         <header>
@@ -38,7 +38,7 @@
 	            <h1 class="logo">网易云阅读</h1>
 	            <a href="/client" class="download" >下载APP</a>
 	            <div class="headR">
-	            	<a href="/search/form.do"  class="search fl" >搜索</a>
+	            	<a href="search.html"  class="search fl" >搜索</a>
 	            	<i class="sep fl"></i>
 	            	<a href="/myinfo.do" class="account fl" >帐户</a>    
 	            </div>
@@ -46,7 +46,7 @@
 	        <!--选择菜单-->
 	        <ul class="menu clearfix">
 	        	<li>
-	            	<a  href="/yc" >男频</a>
+	            	<a  href="man.html" >男频</a>
 	            </li>
 	            <li>
 	            	<a href="/ycmm" >女频</a>
@@ -103,13 +103,13 @@
                 	<em class="sep"></em>
                 	<span class="gradient">主编推荐</span>
                 </strong>
-                <a href="/column/1.do" class="more" >更多<em class="m-arrow"></em></a>
+                <a href="more.html" class="more" >更多<em class="m-arrow"></em></a>
             </h3> 
             <!--内容-->
             <div class="m-book-list">
             	<ul class="clearfix">
             		<li>
-	                    <a href="" class="pic">
+	                    <a href="bookDetails.html" class="pic">
 	                    	<img src="img/1.jpg" srcset="" alt="24个比利" />
 	                    </a>
 	                    <a href=""  class="info">
@@ -384,7 +384,7 @@
 //				meta.content = 'user-scalable=no,width=device-width,initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale;
 //				document.head.appendChild(meta);
 				document.addEventListener('touchstart',function(ev){
-					ev.preventDefault();
+//					ev.preventDefault();
 				})
 				
 				var wrap = document.getElementsByClassName('banner')[0];
