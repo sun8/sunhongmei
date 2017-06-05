@@ -542,3 +542,238 @@ nav.channel {
     border-bottom: #dcdcdc solid 2/@rem;
 }
 /*=====点击更多(样式)==end===*/
+
+
+/*========点击首页专题(样式)==start======*/
+/*图片形容*/
+.m-introduction {
+    padding: 15px 4.6%;
+    border-bottom: 1px solid #e8e7e6;
+}
+.m-introduction .content {
+    font-size: 14px;
+    color: #545454;
+    line-height: 18px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.m-introduction .showmore {
+    position: relative;
+    display: none;
+    margin-top: 10px;
+    line-height: 17px;
+    font-size: 12px;
+    color: #AAA;
+    padding-right: 14px;
+    text-align: right;
+}
+.m-introduction .showmore i {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 9px;
+    height: 5px;
+    background: url(../img/arrow-down1.png);
+    background-size: 100% 100%;
+}
+/*内容列表*/
+.book {
+    padding: 15px 0;
+    margin: 0 4.6%;
+    border-bottom: 1px solid #e8e7e6;
+}
+.m-booklist .book.last {
+    border-bottom: 0;
+}
+.up {
+    position: relative;
+}
+.cover {
+    float: left;
+    width: 65px;
+    height: 91px;
+    margin-right: 15px;
+}
+.night-mask {
+    display: none;
+    position: absolute;
+    width: 65px;
+    height: 91px;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .3;
+}
+.title1 {
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    color: #1D2C33;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+.info1 {
+    margin-bottom: 7px;
+    line-height: 12px;
+    font-size: 12px;
+    color: #AAA;
+}
+.num {
+    color: #6392C5;
+}
+.desc1 {
+    line-height: 16px;
+    height: 32px;
+    font-size: 12px;
+    color: #AAA;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.down {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    line-height: 19px;
+    font-size: 12px;
+    color: #AAA;
+}
+.down:before {
+    position: absolute;
+    top: -14px;
+    left: 29px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: dashed dashed solid dashed;
+    border-color: #fff #fff #f6f6f6;
+    content: "";
+}
+/*========点击专题(样式)==end======*/
+
+
+/*========排行更多(样式)==start======*/
+/*榜单*/
+.rank-menu {
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+}
+.rank-menu a {
+    position: relative;
+    float: left;
+    width: 33%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: #dcdcdc solid 1px;
+}
+.rank-menu a.crt {
+    height: 41px;
+    border-bottom: #c9483c solid 2px;
+    color: #c9483c;
+}
+/*内容*/
+.common-bookele {
+    position: relative;
+    background-color: #FAF7F5;
+}
+.common-bookele a.wrap {
+    position: relative;
+    display: block;
+    padding: 15px 15px 15px 0;
+    margin-left: 15px;
+    border-bottom: #dcdcdc solid 1px;
+}
+.common-bookele img.img {
+    width: 64px;
+    height: 88px;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.common-bookele h3 {
+    font-size: 16px;
+    line-height: 18px;
+    height: 18px;
+    overflow: hidden;
+    word-break: break-all;
+    font-weight: normal;
+    color: #1d2c33;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 2px;
+}
+.common-bookele p {
+    color: #aaa;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.common-bookele span.abstract {
+    padding-top: 4px;
+    height: 32px;
+    line-height: 16px;
+    color: #aaa;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+
+/*========排行更多(样式)==end======*/
+
+
+
+/*========分类跳转(样式)==start======*/
+.select-panel {
+    
+    font-size: 14px;
+    color: #333;
+    background-color: #EBE8E6;
+    padding: 10px 15px 9px;
+    border-bottom: 1px solid #D1CFCD;
+    z-index: 999;
+}
+.select-panel li {
+    line-height: 30px;
+    height: 31px;
+    font-size: 0;
+}
+.select-panel li span.select-label {
+    font-size: 14px;
+}
+.select-panel li span .select {
+    background-color: #C9483C;
+}
+
+.select-panel li span .tag {
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    height: 19px;
+    line-height: 19px;
+    padding: 1px 5px;
+    background-color: #BAB6B3;
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+
+
+
+/*========分类跳转(样式)==end======*/

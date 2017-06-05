@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+		<title>登录-网易云阅读</title>
+		<meta name="keywords" content="">
+<meta name="description" content="">		<meta property="wb:webmaster" content="99a9fd7eb2177775" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta http-equiv="Cache-Control" content="no-transform" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="shortcut icon" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon.ico?a7500236" />
+			<!-- Standard iPhone -->
+			<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png?f7795b93" />
+			<!-- Retina iPhone -->
+			<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png?f7795b93" />
+			<!-- Standard iPad -->
+			<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png?e92f9e07" />
+			<!-- Retina iPad -->
+			<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png?e92f9e07" />
+			<link type="text/css" rel="stylesheet" href="//yuedust.yuedu.126.net/assets/mobile/css/mobi_base.css?c1de2aed"/>
+        <link type="text/css" rel="stylesheet" href="//yuedust.yuedu.126.net/assets/mobile/css/mobi_login_v2.7.css?b03bc2a2"/>
+	
+	</head>
+	<body>
+		<div style="display:none;">
+			<span>classa-yuedu42.server.163.org</span>
+			<span>223.255.127.151</span>
+			<input id="j-csrf" type="hidden" value="94d79a4e066300201bf73a01af99e226" />
+		</div>
+
+		<div class="g-wrap " >
+
+	<header class="level1">
+        <section class="f-cb">
+            <h1 class="logo"></h1>
+            <a href="/client" class="download J_downloadbtn" style="float: right;" onclick="_gaq.push(['_trackEvent', 'account', 'account_download_click'])">下载APP</a>
+        </section>
+    </header>
+
+        <div class="m-login-container">
+            <input type="hidden" id="csrf_token" name="csrf_token" value="94d79a4e066300201bf73a01af99e226" />
+            <input type="hidden" id="backUrl" name="backUrl" value="http://m.yuedu.163.com/index" />
+            <div class="m-login-header">
+                <a class="left back" id="goBack" href="javascript:;"></a>
+                <span class="title">手机号快速登录</span>
+                <a class="right" href="/" id="goHome">首页</a>
+            </div>
+            <div class="m-login-content">
+                <div class="getCode-block">
+                    <input type="number" pattern="\d*" placeholder="输入手机号" class="u-input phone-number" tabindex="1">
+                    <i class="clear-icon" style="display: none;"></i>
+                    <a href="javascript:;" id="getCode" class="u-button disable" tabindex="2">获取验证码</a>
+                </div>
+                <div class="writeCode-block" style="display: none;">
+                    <div class="phone-display">手机号：<span class="phone-number-span"></span></div>
+                    <input type="tel" class="code-input" maxlength="6" pattern="\d*" autocomplete="off">
+                    <ul class="code-display">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li class="last"></li>
+                    </ul>
+                    <a href="javascript:;" id="reGetCode" class="u-button disable">重新获取验证码 <span id="codeTimer">60</span></a>
+                </div>
+                <div class="setPassword-block" style="display: none;">
+                    <input type="password" placeholder="6-16位密码，区分大小写" class="u-input password" tabindex="1">
+                    <i class="show-icon"></i>
+                    <a href="javascript:;" id="setPassword" class="u-button disable" tabindex="2">确认密码</a>
+                </div>
+            </div>
+            <div class="m-login-switch">
+                <div class="line-title">
+                    <h4>
+                        以下帐号直接登录
+                    </h4>
+                </div>
+                <ul class="f-cb">
+                    <li class="mail" onclick="_gaq.push(['_trackEvent', 'reglog', 'easypass_click'])">
+                        <a href="/login/urs.do?target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>网易邮箱</a>
+                    </li>
+                    <li class="weibo" onclick="_gaq.push(['_trackEvent', 'reglog', 'sinaweibo_click'])">
+                        <a href="/ext/oauth/authorize.do?vendor_type=sinamblog&version=2&module=login_redirect&target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>新浪微博</a>
+                    </li>
+                    <li class="tx-weibo" onclick="_gaq.push(['_trackEvent', 'reglog', 'tencentweibo_click'])">
+                        <a href="/ext/oauth/authorize.do?vendor_type=qqmblog&version=2&module=login_redirect&target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>腾讯微博</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-tip" style="opacity: 0; display: none;"></div>
+        <div class="m-loading-mask" style="display:none;">
+            <div class="loading-bg">
+                <i class="loading-icon"></i>
+            </div>
+        </div>
+		</div>
+
+			<footer>
+				<nav class="channel">
+					<a href="/yc">男生</a>
+					<a href="/ycmm">女生</a>
+					<a href="/book">出版</a>
+					<a href="/help/about.do">客服</a>
+					<a href="/help/weixin.do">微信</a>
+				</nav>
+				<nav>
+					<a href="/client">客户端</a>
+					<a href="/help">帮助</a>
+					<a href="https://fankui.163.com/ft/comment.fb?pid=11001">反馈</a>
+					<a href="/" class="cur">触屏版</a>
+					<a href="https://yuedu.163.com/index">电脑版</a>
+				</nav>
+				<div class="m-right"><p>网易公司版权所有©1997-2017</p></div>
+			</footer>
+
+
+<script type="text/javascript" src="//yuedust.yuedu.126.net/static/gen/gen_c7231f7ae09d1f11d47a28a48a7df87c.js?8b20eb7d"></script>
+
+<script src="//yuedust.yuedu.126.net/assets/mobile/activity/common/js/touch.js?784b9b98"></script>
+<script src="//yuedust.yuedu.126.net/assets/mobile/js/login/fastLogin_v2.7.js?7c384d28"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-48676860-1'],['_setLocalGifPath', '/UA-48676860-1/__utm.gif'],['_setLocalServerMode']);
+		_gaq.push(['_addOrganic','baidu','word']);
+		_gaq.push(['_addOrganic','soso','w']);
+		_gaq.push(['_addOrganic','youdao','q']);
+		_gaq.push(['_addOrganic','sogou','query']);
+		_gaq.push(['_addOrganic','so.360.cn','q']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackPageLoadTime']);
+		setTimeout(function() {
+			var ga = document.createElement('script');
+				ga.type = 'text/javascript'; 
+				ga.async = true;
+				ga.src = '/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+		}, 1000);
+	</script>
+	<script>
+	    (function(i,s,ob,g,r,a,m)  
+	    {  
+	        i['AnalyticsObject']=r;   
+
+	        i[r] = i[r] || function()  
+	        {  
+	            (i[r].ops = i[r].ops || []).push(arguments);  
+	        }  
+	          
+	        a = s.createElement(ob);  
+	        a.type = "text/javascript";  
+	        m = s.getElementsByTagName(ob)[0];  
+	        a.async=false; // 1 asynchronous  
+	        a.src=g;  
+	        m.parentNode.insertBefore(a,m);  
+	    })(window, document, 'script', '//rev.da.netease.com/da.js?t='+ parseInt((new Date().getTime())/1000000), '_dapush');  
+	    _dapush('create','DA-A888-A990E152BA01'); 
+	    _dapush('page_view');
+	</script>
+	</body>
+</html>
+
