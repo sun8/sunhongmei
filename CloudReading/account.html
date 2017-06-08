@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="css/bookDetails.css"/>
 	<link rel="stylesheet" href="css/comment.css"/>
 	<link rel="stylesheet" href="css/different.css"/>
+	<link rel="stylesheet" href="css/account.css"/>
 		
 	<!-- 获取设备的宽  -->	
 	<script type="text/javascript">
@@ -30,7 +31,8 @@
 	<!-- Retina iPad -->  
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" /> 
 </head>
-<body style="height: 110rem;">
+<body>
+	<div class="g-wrap">
 	<header class="level1">
         <section class="clearfix">
             <h1 class="logo"></h1>
@@ -39,12 +41,12 @@
     </header>
 
     <div class="m-login-container">
-        <input type="hidden" id="csrf_token" name="csrf_token" value="94d79a4e066300201bf73a01af99e226" />
-        <input type="hidden" id="backUrl" name="backUrl" value="http://m.yuedu.163.com/index" />
+        <input type="hidden" id="csrf_token" name="csrf_token" value="" />
+        <input type="hidden" id="backUrl" name="backUrl" value="" />
         <div class="m-login-header">
             <a class="left back" id="goBack" href="javascript:;"></a>
-            <span class="title">手机号快速登录</span>
-            <a class="right" href="/" id="goHome">首页</a>
+            <span>手机号快速登录</span>
+            <a class="right" href="index.html" id="goHome">首页</a>
         </div>
         <div class="m-login-content">
             <div class="getCode-block">
@@ -78,14 +80,14 @@
 	                </h4>
 	            </div>
 	            <ul class="f-cb">
-	                <li class="mail" onclick="_gaq.push(['_trackEvent', 'reglog', 'easypass_click'])">
-	                    <a href="/login/urs.do?target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>网易邮箱</a>
+	                <li class="mail" >
+	                    <a href="/"><span></span>网易邮箱</a>
 	                </li>
-	                <li class="weibo" onclick="_gaq.push(['_trackEvent', 'reglog', 'sinaweibo_click'])">
-	                    <a href="/ext/oauth/authorize.do?vendor_type=sinamblog&version=2&module=login_redirect&target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>新浪微博</a>
+	                <li class="weibo" >
+	                    <a href="/"><span></span>新浪微博</a>
 	                </li>
-	                <li class="tx-weibo" onclick="_gaq.push(['_trackEvent', 'reglog', 'tencentweibo_click'])">
-	                    <a href="/ext/oauth/authorize.do?vendor_type=qqmblog&version=2&module=login_redirect&target_url=http%3A%2F%2Fm.yuedu.163.com%2Fmyinfo.do"><span></span>腾讯微博</a>
+	                <li class="tx-weibo" >
+	                    <a href="/"><span></span>腾讯微博</a>
 	                </li>
 	            </ul>
 	        </div>
@@ -98,7 +100,7 @@
 	    </div>
 	</div>
 
-		
+		</div>
 
    	<!--footer--start-->
    	<footer>

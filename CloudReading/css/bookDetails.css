@@ -42,7 +42,7 @@
 .ui-search {
   display: inline-block;
   margin-bottom: 0.125rem;
-  text-indent: -9999px;
+  font-size: 0;
   vertical-align: middle;
   width: 0.575rem;
   height: 0.575rem;

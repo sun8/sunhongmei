@@ -92,6 +92,7 @@ function up(ev) {
 //画板清除
 function drawF() {
     oGC.clearRect(540, 126, 303, 301);
+    canvas.width = canvas.width;
     oGC.save();
     oGC.restore();
     // 	invalidate();

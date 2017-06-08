@@ -1,148 +1,149 @@
 .m-login-container {
-    background: #fff;
+  background: #fff;
 }
-
-
+header.level1 section {
+  background-color: #ed6460;
+  position: relative;
+}
+.m-login-header {
+  height: 1.65rem;
+  line-height: 1.65rem;
+  border-bottom: 0.05rem solid #ededed;
+  padding: 0 0.575rem;
+  text-align: center;
+  font-size: 0.675rem;
+  color: #595550;
+}
+.back {
+  float: left;
+  margin-top: 0.4rem;
+  display: block;
+  height: 0.825rem;
+  width: 0.825rem;
+  background: url(../img/arrow-left1.png) center center no-repeat;
+  background-size: 0.3575rem 0.65rem;
+}
 .m-login-container .m-login-header {
-    height: 44px;
-    line-height: 44px;
-    border-bottom: 1px solid #ededed;
-    padding: 0 15px;
-    text-align: center;
-    font-size: 18px;
-    color: #595550;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  border-bottom: 0.05rem solid #ededed;
+  padding: 0 0.575rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #595550;
 }
-.m-login-container .m-login-header .back {
-    margin-top: 11px;
-    display: block;
-    height: 22px;
-    width: 22px;
-    background: url(/assets/mobile/images/login_v2.7/arrow-left.png?fb1cce9e) center center no-repeat;
-    background-size: 9.5px 17px;
+.m-login-header .right {
+  float: right;
+  font-size: 0.575rem;
 }
-
-
-.m-login-container .m-login-header .left {
-    float: left;
+.m-login-content {
+  padding: 0 0.575rem;
 }
-.m-login-container .m-login-header .right {
-    float: right;
-    font-size: 15px;
+.getCode-block {
+  margin-top: 1.875rem;
+  position: relative;
 }
-.m-login-container .m-login-content {
-    padding: 0 15px;
+.u-input {
+  display: block;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  height: 1.5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.125rem;
+  font-size: 0.6rem;
+  line-height: 0.6rem;
+  padding: 0.475rem 0.375rem;
+  box-sizing: border-box;
+  color: #595550;
+  margin-bottom: 0.575rem;
 }
-.m-login-container .m-login-content .getCode-block {
-    margin-top: 50px;
-    position: relative;
+.clear-icon {
+  display: block;
+  position: absolute;
+  right: 0.225rem;
+  top: 0.225rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  background: url(../img/x.png) center center no-repeat;
+  background-size: 0.525rem 0.525rem;
 }
-.m-login-container .m-login-content .u-input {
-    display: block;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    width: 100%;
-    height: 40px;
-    background-color: #f5f5f5;
-    border-radius: 3px;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 12.5px 10px;
-    box-sizing: border-box;
-    color: #595550;
-    margin-bottom: 15px;
+.u-button.disable {
+  background-color: rgba(237, 99, 95, 0.5);
 }
-.m-login-container .clear-icon {
-    display: block;
-    position: absolute;
-    right: 6px;
-    top: 6px;
-    width: 28px;
-    height: 28px;
-    background: url(/assets/mobile/images/login_v2.7/x.png?42e35005) center center no-repeat;
-    background-size: 14px 14px;
+.u-button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 0.125rem;
+  background-color: #ed6460;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
 }
-.m-login-container .m-login-content .u-button.disable {
-    background-color: rgba(237,99,95,0.50);
+.m-login-switch {
+  margin-top: 1.5rem;
+  padding: 0 0.575rem;
 }
-mobi_login_v2.7.css?b03bc2a2:1
-.m-login-container .m-login-content .u-button {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 3px;
-    background-color: #ed6460;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
+.line-title {
+  height: 0.75rem;
+  position: relative;
+  overflow: hidden;
+  zoom: 1;
 }
-.m-login-container .m-login-switch {
-    margin-top: 40px;
-    padding: 0 15px;
-}
-.m-login-container .m-login-switch .line-title {
-    height: 20px;
-    position: relative;
-    overflow: hidden;
-    zoom: 1;
-}
-.m-login-container .m-login-switch .line-title h4 {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 14px;
-    color: #c8c8c8;
-    height: 20px;
-    line-height: 20px;
-    font-weight: normal;
-    z-index: 10;
-    background: #fff;
-    padding: 0 5px;
+.line-title h4 {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.525rem;
+  color: #c8c8c8;
+  height: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: normal;
+  z-index: 10;
+  background: #fff;
+  padding: 0 0.175rem;
 }
 .m-login-switch ul {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-box;
-    margin: 20px auto;
-    display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  margin: 0.75rem auto;
+  display: flex;
 }
 .m-login-switch li {
-    box-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
+  box-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
 }
 .m-login-switch li a {
-    position: relative;
-    display: block;
-    color: #807a73;
-    text-align: center;
+  position: relative;
+  display: block;
+  color: #807a73;
+  text-align: center;
 }
 .m-login-switch li.mail span {
-    background: url(/assets/mobile/images/login_v2.7/mail.png?05d79c87) no-repeat;
-    background-size: 44px 44px;
-    background-position: center top;
+  background-image: url(../img/mail.png);
 }
 .m-login-switch li.weibo span {
-    background: url(/assets/mobile/images/login_v2.7/weibo.png?4426e58b) no-repeat;
-    background-size: 44px 44px;
-    background-position: center top;
+  background-image: url(../img/weibo.png);
 }
 .m-login-switch li.tx-weibo span {
-    background: url(/assets/mobile/images/login_v2.7/txweibo.png?6bb8b0a0) no-repeat;
-    background-size: 44px 44px;
-    background-position: center top;
+  background-image: url(../img/txweibo.png);
 }
-
-.m-login-switch li a span {
-    display: block;
-    width: 44px;
-    height: 44px;
-    margin: 0 auto 8px;
+.m-login-switch li span {
+  display: block;
+  width: 1.65rem;
+  height: 1.65rem;
+  margin: 0 auto 0.3rem;
+  background-size: 1.65rem 1.65rem;
+  background-position: center top;
 }
