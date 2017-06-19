@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<base href="${basePath}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>网易云阅读</title>
+	<meta name="keywords" content="小说，免费小说，热门小说，言情小说，官场小说，图书，网易，阅读，网易云阅读">
+	<meta name="description" content="网易云阅读提供丰富的原创小说、畅销好书、热门新闻和文章免费在线阅读和下载。包括文学、传记、艺术、经济管理，官场小说、都市小说、言情小说，热血漫画，旅游、电影杂志等。手机上支持Android、iPhone、iPad、Android Pad、Windows Phone、Windows8等多平台免费下载！">
+	<!-- 样式引入   -->
+	<link rel="stylesheet" href="css/Book/reset.css"/>
+	<link rel="stylesheet" href="css/Book/index.css"/>
+	<link rel="stylesheet" href="css/Book/bookDetails.css"/>
+	<link rel="stylesheet" href="css/Book/comment.css"/>
+	<link rel="stylesheet" href="css/Book/different.css"/>
+	<link rel="stylesheet" href="css/Book/account.css"/>
+		
+	<!-- 获取设备的宽  -->	
+	<script type="text/javascript">
+		var iScale=1/window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
+		var iWidth=document.documentElement.clientWidth;
+		document.getElementsByTagName('html')[0].style.fontSize=iWidth/16+ 'px';
+	</script>
+	<!-- 图标  -->
+	<link rel="shortcut icon" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon.ico" />
+	<!-- Standard iPhone -->  
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+	<!-- Retina iPhone -->  
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+	<!-- Standard iPad -->  
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" />  
+	<!-- Retina iPad -->  
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" /> 
+</head>
+<body>
+	<div class="g-wrap">
+	<header class="level1">
+        <section class="clearfix">
+            <h1 class="logo"></h1>
+            <a href="/client" class="download J_downloadbtn" style="float: right;" onclick="_gaq.push(['_trackEvent', 'account', 'account_download_click'])">下载APP</a>
+        </section>
+    </header>
+
+    <div class="m-login-container">
+        <input type="hidden" id="csrf_token" name="csrf_token" value="" />
+        <input type="hidden" id="backUrl" name="backUrl" value="" />
+        <div class="m-login-header">
+            <a class="left back" id="goBack" href="javascript:;"></a>
+            <span>手机号快速登录</span>
+            <a class="right" href="index.html" id="goHome">首页</a>
+        </div>
+        <div class="m-login-content">
+            <div class="getCode-block">
+                <input type="number" pattern="\d*" placeholder="输入手机号" class="u-input phone-number" tabindex="1">
+                <i class="clear-icon" style="display: none;"></i>
+                <a href="javascript:;" id="getCode" class="u-button disable" tabindex="2">获取验证码</a>
+            </div>
+            <div class="writeCode-block" style="display: none;">
+                <div class="phone-display">手机号：<span class="phone-number-span"></span></div>
+                <input type="tel" class="code-input" maxlength="6" pattern="\d*" autocomplete="off">
+                <ul class="code-display">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="last"></li>
+                </ul>
+                <a href="javascript:;" id="reGetCode" class="u-button disable">重新获取验证码 <span id="codeTimer">60</span></a>
+            </div>
+            <div class="setPassword-block" style="display: none;">
+                <input type="password" placeholder="6-16位密码，区分大小写" class="u-input password" tabindex="1">
+                <i class="show-icon"></i>
+                <a href="javascript:;" id="setPassword" class="u-button disable" tabindex="2">确认密码</a>
+            </div>
+        </div>
+	        <div class="m-login-switch">
+	            <div class="line-title">
+	                <h4>
+	                    以下帐号直接登录
+	                </h4>
+	            </div>
+	            <ul class="f-cb">
+	                <li class="mail" >
+	                    <a href="/"><span></span>网易邮箱</a>
+	                </li>
+	                <li class="weibo" >
+	                    <a href="/"><span></span>新浪微博</a>
+	                </li>
+	                <li class="tx-weibo" >
+	                    <a href="/"><span></span>腾讯微博</a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="m-tip" style="opacity: 0; display: none;"></div>
+	    <div class="m-loading-mask" style="display:none;">
+	        <div class="loading-bg">
+	            <i class="loading-icon"></i>
+	        </div>
+	    </div>
+	</div>
+
+		</div>
+
+   	<!--footer--start-->
+   	<footer>
+		<nav class="channel">
+			<a href="/yc">男生</a>
+			<a href="/ycmm">女生</a>
+			<a href="/book">出版</a>
+			<a href="/help/about.do">客服</a>
+			<a href="/help/weixin.do">微信</a>
+		</nav>
+		<nav>
+			<a href="/client">客户端</a>
+			<a href="/help">帮助</a>
+			<a href="https://fankui.163.com/ft/comment.fb?pid=11001">反馈</a>
+			<a href="/" class="cur">触屏版</a>
+			<a href="https://yuedu.163.com/index">电脑版</a>
+		</nav>
+		<div class="m-right"><p>网易公司版权所有©1997-2017</p></div>
+	</footer>
+   	<!--footer--end-->
+ 
+   
+   
+
+
+</body>
+</html>
+

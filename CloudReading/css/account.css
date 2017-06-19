@@ -73,8 +73,8 @@ header.level1 section {
   background-color: rgba(237, 99, 95, 0.5);
 }
 .u-button {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 49%;
   box-sizing: border-box;
   height: 1.5rem;
   line-height: 1.5rem;

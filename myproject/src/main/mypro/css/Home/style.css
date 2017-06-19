@@ -1,0 +1,39 @@
+*{margin:0;padding:0}
+body{font:12px/1.5 MIcrosoft YaHei,Arial, Helvetica, sans-serif;color:#333}
+table{width:100%; border-collapse:collapse;border:none;border-spacing:0}
+a{color:#202020;text-decoration:none;}
+img{border:none}
+input{vertical-align:middle;outline:none}
+textarea{outline:none;}
+ul,ol,dl{list-style:none;}
+b,em,i,u,strong{font-weight:normal;font-style:normal;text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:14px;font-weight:normal;}
+
+/*公共样式*/
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{overflow:hidden;zoom:1}
+.clear{clear:both}
+
+/*头部*/
+.top{height:100px;background:#043b86 url(../images/top.jpg) no-repeat -100px top;line-height:100px;padding:0 50px;font-size:24px;color:#FFF;}
+.topBack{font-size:14px;}
+.topBack a{color:#FFF;text-decoration:underline;margin-left:20px;}
+.center{width: 1250px;background:url(../images/navLeft.jpg) repeat-y left;}
+.left{float: left;width: 200px;padding-bottom:100px;}
+.left ul{padding:20px 0;}
+.left ul li{height:30px;line-height:30px;font-size:14px;}
+.left ul li a{display:block;color:#000;padding:0 10px;}
+.left ul li a:hover{background:#043b86;color:#FFF;}
+.left ul li a.click{background:#043b86;color:#FFF;}
+.right{float: right;width:1050px;padding-top:20px;}
+
+.title{height:30px;line-height:30px;font-size:16px;border-bottom:solid 2px #CCC;margin-bottom:10px;padding:0 5px;}
+.title i{float:left;width:4px; height:15px;background:#043b86;margin-top:8px;margin-right:10px;}
+.commonTable tr td,.commonTable tr th{padding:10px 5px;border:solid 1px #eee;}
+.commonTable tr th{background:#fafafa;font-size:14px;}
+.blue,a.blue{color:#047fdf;font-size:12px;}
+.commonTable tr td.bgColor{background:#fafafa;}
+.sub{border:none;padding:0 10px;display:inline-block;height:24px;line-height:24px;background:#043b86;color:#FFF;cursor:pointer;}
+.sub:hover{background:#0347a5}
+.inp{width:200px;height:20px;line-height:20px;border:solid 1px #CCC;}

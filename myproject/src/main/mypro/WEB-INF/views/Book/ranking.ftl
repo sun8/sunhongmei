@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<base href="${basePath}">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>图书排行榜</title>
+	<meta name="keywords" content="小说，免费小说，热门小说，言情小说，官场小说，图书，网易，阅读，网易云阅读">
+	<meta name="description" content="网易云阅读提供丰富的原创小说、畅销好书、热门新闻和文章免费在线阅读和下载。包括文学、传记、艺术、经济管理，官场小说、都市小说、言情小说，热血漫画，旅游、电影杂志等。手机上支持Android、iPhone、iPad、Android Pad、Windows Phone、Windows8等多平台免费下载！">
+	<!-- 样式引入   -->
+	<link rel="stylesheet" href="css/Book/reset.css"/>
+	<link rel="stylesheet" href="css/Book/index.css"/>
+	<link rel="stylesheet" href="css/Book/bookDetails.css"/>
+	<link rel="stylesheet" href="css/Book/comment.css"/>
+	<link rel="stylesheet" href="css/Book/different.css"/>
+		
+	<!-- 获取设备的宽  -->	
+	<script type="text/javascript">
+		var iScale=1/window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
+		var iWidth=document.documentElement.clientWidth;
+		document.getElementsByTagName('html')[0].style.fontSize=iWidth/16+ 'px';
+	</script>
+	<!-- 图标  -->
+	<link rel="shortcut icon" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon.ico" />
+	<!-- Standard iPhone -->  
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+	<!-- Retina iPhone -->  
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-114.png" />  
+	<!-- Standard iPad -->  
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" />  
+	<!-- Retina iPad -->  
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//yuedust.yuedu.126.net/assets/mobile/images/favicon/favicon-144.png" /> 
+</head>
+<body>
+	<div class="wrap">
+		<!--header--start-->
+        <header>
+        	<!--导航条-->
+	        <section class="head clearfix">
+	            <h1 class="logo">网易云阅读</h1>
+	            <a href="Book/" class="download" >下载APP</a>
+	            <div class="headR">
+	            	<a href="Book/search"  class="search fl" >搜索</a>
+	            	<i class="sep fl"></i>
+	            	<a href="Book/" class="account fl" >帐户</a>    
+	            </div>
+	        </section>
+	        <!--选择菜单-->
+	       <ul class="menu clearfix">
+	        	<li>
+	            	<a  href="Book/ts_type?type=man" >男频</a>
+	            </li>
+	            <li>
+	            	<a href="Book/ts_type?type=man" >女频</a>
+	            </li>
+	            <li>
+	            	<a  href="Book/" >出版</a>
+	            </li>
+	            <li>
+	            	<a  href="Book/ts_type?type=classify" >分类</a>
+	            </li>
+	            <li>
+	            	<a href="Book/ts_type?type=free" >免费</a>
+	            </li>
+	            <li>
+	            	<a  href="Book/ts_type?type=taste" >口味</a>
+	            </li>
+	            <li>
+	            	<a  href="Book/ts_type?type=ranking" >排行</a>
+	            </li>
+	            <li>
+	            	<a href="Book/ts_type?type=account" class="recharge" >充值</a>
+	            </li>           
+	        </ul>
+    	</header>
+    	<!--header--end-->
+    	
+ 		<!--图书排行榜(排行跳转)--start-->
+        <section class="m-list-box">           
+            <h3 class="clearfix">
+                <strong class="fl">
+                	<em class="sep"></em>
+                	<span class="gradient">图书排行榜</span>
+                </strong>
+                <a href="move1.html" class="more" >更多<em class="m-arrow"></em></a>
+            </h3> 
+            <ul class="m-rank-list clearfix">
+ 				<li class="cont">
+            		<a href="bookDetails.html" class="" title="一念钟情：墨少的专属娇妻">
+	               		<em class="fir">1</em>
+		                <img src="img/sort.jpg" alt="一念钟情：墨少的专属娇妻">
+		                <h3>一念钟情：墨少的专属娇妻</h3>
+		                <p>清平小调/都市言情</p>                    
+		                <p>四年前陶意莫名其妙的失了身狼狈不堪被退了婚被威胁着生下了孩子最后……连孩子看都没看上一眼，就弄丢了四年前陶意莫名其妙的失了身狼狈不堪被退了婚被威胁着生下了孩子最后……连孩子看都没看上一眼，</p>
+	            	</a>
+		        </li>
+		        <li>
+		            <a href="bookDetails.html">
+		               <em class="bg2">2</em>
+		               <span>少帅你老婆又跑了 </span>                
+		            </a>
+		        </li>  
+		        <li>
+		            <a href="bookDetails.html">
+		               <em class="bg3">3</em>
+		               <span>怦然心动 </span>                
+		            </a>
+		       	</li>  
+		        <li>
+		            <a href="bookDetails.html">
+		               <em>4</em>
+		               <span>一夜成欢：邪恶总裁坏坏爱 </span>                
+		            </a>
+		       	</li> 
+		        <li>
+		            <a href="bookDetails.html">
+		               <em>5</em>
+		               <span>契约婚姻，娶一赠一 </span>                
+		            </a>
+		       </li>                
+     		</ul>
+        </section>
+        <!--图书排行榜--end-->
+   	</div>
+   	
+   	<!--footer--start-->
+   	<footer>
+	    <nav>
+	        <a href="javascript:;">客户端</a>
+	        <a href="javascript:;">帮助</a>
+	        <a href="javascript:;">反馈</a>
+	        <a href="javascript:;" class="cur">触屏版</a>
+	        <a href="javascript:;">电脑版</a>
+	    </nav>
+	    <div class="m-right"><p>网易公司版权所有&#169;1997-2017<span id="J_Copyright"></span></p></div>
+	</footer>
+   	<!--footer--end-->
+   
+   
+
+
+</body>
+</html>
+

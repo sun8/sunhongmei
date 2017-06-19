@@ -1,0 +1,217 @@
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font-size: 0.45rem;
+  line-height: 1.14;
+  color: #333;
+  outline: 0;
+}
+.reader.mode-light {
+  background-color: #f0ebe4;
+  margin: 0;
+}
+/*内容*/
+.ui-main {
+  position: relative;
+  -webkit-transition: -webkit-transform 350ms ease;
+  transition: transform 350ms ease;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  z-index: 1;
+}
+.g-main {
+  min-height: 100%;
+  position: relative;
+  display: none;
+  font-size: 0.675rem;
+}
+/*整体位移*/
+.ui-main.state-opened {
+  -webkit-transform: translate(11.25rem, 0);
+  transform: translate(11.25rem, 0);
+  -ms-touch-action: none;
+}
+.reader .content {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 0.375rem;
+  min-height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  -webkit-overflow-scrolling: touch;
+}
+.reader.mode-light .content p,
+.reader.mode-light .content div {
+  color: #222;
+  text-align: justify;
+}
+.reader .content p,
+.reader .content div {
+  text-indent: 2em;
+  margin-bottom: 0.6rem;
+}
+.reader .content * {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -ms-user-select: none;
+  line-height: 1.8;
+}
+/*下拉时出现的刷新*/
+.reader .content .up-hint,
+.reader .content .down-hint {
+  margin-bottom: 0;
+}
+.reader .content .up-hint .ui-loading,
+.reader .content .down-hint .ui-loading {
+  background: url(../img/loading-day.gif) 0 0 no-repeat;
+  background-size: 0.6rem;
+}
+.reader .content .up-hint .j-loading,
+.reader .content .down-hint .j-loading {
+  float: none;
+  margin: 0 auto;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.reader .content .up-hint p,
+.reader .content .down-hint p {
+  text-align: center;
+  font-size: 0.6rem;
+  color: #999;
+  text-indent: 0;
+  margin-bottom: 0;
+}
+/*正文*/
+.reader.mode-light .content h1,
+.reader.mode-light .content h2,
+.reader.mode-light .content h3 {
+  color: #933;
+}
+.reader .content h1 {
+  font: bold 1.5em "微软雅黑";
+  text-indent: 0;
+}
+.reader .content p,
+.reader .content div {
+  text-indent: 2em;
+  margin-bottom: 0.6rem;
+}
+/*上拉下一章*/
+.reader .content .holdplace p {
+  height: 1.65rem;
+  line-height: 1.65rem;
+  text-align: center;
+  text-indent: 0;
+  font-size: 0.6rem;
+  color: #998C7F!important;
+  margin-bottom: 0;
+}
+/*左侧标题*/
+aside {
+  width: 11.3rem;
+  background: #fbf7f3;
+  height: 100%;
+  overflow: hidden;
+}
+.m-cata {
+  padding: 0.375rem 0.6rem 0;
+}
+.m-cata .sort-btn span {
+  color: #ABA499;
+}
+.m-cata .sort-btn button {
+  margin-left: 0.375rem;
+  margin-right: 0.375rem;
+  padding-right: 0.375rem;
+  border: none;
+  float: right;
+  color: #E5A67E;
+  position: relative;
+  background-color: #fbf7f3;
+}
+.m-cata .sort-btn button .caret.reverse {
+  background: url(../img/squece-down.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.m-cata .sort-btn button .caret {
+  position: absolute;
+  width: 0.325rem;
+  height: 0.325rem;
+  top: 0.075rem;
+  right: 0;
+  background: url(../img/squece-up.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.m-cata .sort-btn span {
+  color: #ABA499;
+}
+.m-cata .aside-btn {
+  padding: 0.575rem 0;
+}
+.m-cata .aside-btn .dir-btn:first-child {
+  margin-right: 0.5rem;
+}
+.m-cata .aside-btn .dir-btn-disable {
+  border: #ebe8e6 solid 0.05rem;
+  background-color: #ebe8e6;
+  color: #fbf7f3;
+}
+.m-cata .aside-btn .dir-btn {
+  padding: 0.3rem 1.325rem;
+  border: #d1ccc7 solid 0.05rem;
+  border-radius: 0.15rem;
+  background-color: #fff;
+  color: #999;
+  font-size: 0.525rem;
+}
+/*列表*/
+.m-cata ul > li {
+  height: 1.7rem;
+  border-bottom: #aeaeae dotted 0.05rem;
+  font-size: 0.525rem;
+}
+li {
+  list-style: none;
+}
+.m-cata ul > li span {
+  line-height: 1.7rem;
+  height: 1.7rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #566166;
+}
+.m-cata ul > li {
+  height: 1.7rem;
+  border-bottom: #aeaeae dotted 0.05rem;
+  font-size: 0.525rem;
+}
+/*遮罩层*/
+.guide {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: none;
+}
+.guide p {
+  color: #ccc;
+  font-size: 0.75rem;
+}
+.guide p i {
+  display: inline-block;
+  width: 0.825rem;
+  height: 1.1rem;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  background: url(../img/pointer.png) 0 0 no-repeat;
+  background-size: 100%;
+}

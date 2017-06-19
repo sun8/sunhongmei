@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+        http://www.springframework.org/schema/tx  
+        http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+	<!-- 框架相关配置 -->
+	
+	<mvc:annotation-driven />
+	<!-- 资源 -->
+	<mvc:resources mapping="/js/**" location="/js/" />
+	<mvc:resources mapping="/css/**" location="/css/" />
+	<mvc:resources mapping="/images/**" location="/images/" />
+	<mvc:resources mapping="/img/**" location="/img/" />
+	<mvc:resources mapping="/fonts/**" location="/fonts/" />
+	<mvc:resources mapping="/test/*.jsp" location="/test/" />
+	<mvc:resources mapping="/**" location="/html/" />
+	
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">  
+    <property name="messageConverters">  
+        <list>  
+            <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>  
+            <bean id="jsonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" >  
+                <property name = "supportedMediaTypes">  
+                    <list>  
+                        <value>text/plain;charset=UTF-8</value>  
+                    </list>  
+                </property>
+            </bean>  
+        </list>  
+    </property>  
+	</bean> 
+	
+	
+
+	<!-- 注意：FreeMarker与SpringMVC集成时，其配置一定要放在SpringMVC的配置之前 -->
+	<!-- 否则：在访问"/getUser"时服务器就会报告[HTTP Status 404 - /WEB-INF/jsp/myfree.jsp] -->
+
+	<!-- Freemarker配置 -->
+	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<!-- 指定FreeMarker模板文件目录 -->
+		<property name="templateLoaderPath" value="/WEB-INF/views/" />
+		<!-- 编码设置 -->
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="defaultEncoding">UTF-8</prop>
+				<prop key="locale">zh_CN</prop>
+				<prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
+				<prop key="date_format">yyyy-MM-dd</prop>
+				<prop key="number_format">#.##</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="freeMarkerViewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="prefix" value="" />
+		<property name="suffix" value=".ftl" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.freemarker.MyFreeMakerView" />
+		<property name="contentType" value="text/html; charset=UTF-8" />
+		<property name="exposeRequestAttributes" value="true" />
+		<property name="exposeSessionAttributes" value="true" />
+		<property name="requestContextAttribute" value="request" />
+		<property name="cache" value="false" />
+	</bean>
+
+	<bean id="myFreeMakerView"
+		class="org.springframework.web.servlet.view.freemarker.MyFreeMakerView">
+		<property name="userAgent">
+			<map>
+			<entry key=".*ioriMozilla/5.0.*" value="ie7" />
+			</map>
+		</property>
+
+		<property name="url" value="" />
+	</bean>
+
+	<!--视图解释器 -->
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.InternalResourceView" />
+	</bean>
+
+	<!-- 扫描路径 -->
+	<context:component-scan base-package="com.trm.pro" />
+
+	<!-- 装配 -->
+	<import resource="spring-interceptor.xml" />
+
+	<!--<tx:annotation-driven transaction-manager="transactionManager" />-->
+
+	<!-- 文件上传 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="20971520" />
+		<property name="maxInMemorySize" value="10240" />
+		<property name="defaultEncoding" value="utf-8" />
+	</bean> 
+	
+	
+	<!-- 将多个配置文件读取到容器中，交给Spring管理 -->
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<!-- 这里支持多种寻址方式：classpath和file -->
+				<value>classpath:data_config.properties</value>
+				<!-- 推荐使用file的方式引入，这样可以将配置和代码分离 -->
+				<!-- <value>file:/opt/demo/config/demo-mq.properties</value> <value>file:/opt/demo/config/demo-remote.properties</value> -->
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 数据库装配 -->
+	<bean id="datasource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.user}" />
+		<property name="password" value="${jdbc.pass}" />
+
+	</bean>
+
+	<!-- hibernate sessionfactory 配置 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="datasource" />
+		<!-- 注意：我用的是Annotation的方式配置的Hibernate，这里的property的name是annotatedClasses -->
+		<property name="packagesToScan">
+			<list>
+				<value>com.trm.pro.entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.connection.pool_size">200</prop>
+				<!-- 设置Hibernate方言 -->
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<!-- 是否打印sql -->
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- 格式化sql -->
+				<prop key="hibernate.format_sql">true</prop>
+				<!-- 是否自动更新表 -->
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+				<!-- <prop key="hibernate.current_session_context_class">thread</prop> -->
+				<!-- 最大抓取深度，如果为0，则关闭默认的外连接抓取。建议值为0-3 -->
+				<prop key="hibernate.max_fetch_depth">1</prop>
+				<!-- 用于生成有助于调试的注释信息，默认为关闭 -->
+				<prop key="hibernate.use_sql_comments">true</prop>
+				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext
+				</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- 事务 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+</beans>

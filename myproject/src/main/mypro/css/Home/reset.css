@@ -1,0 +1,61 @@
+/* CSS Document */
+body,dd,dl,p,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font:12px "";
+	}
+body{background-color:#fff;}
+ol,ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+strong,b,h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	}
+em,i{
+	font-style:normal;
+	}
+a{
+	text-decoration:none;
+	color: inherit;
+	}
+img{
+	border:none;
+	vertical-align:top;
+	}
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:0;
+	overflow:hidden;
+	visibility:hidden; 
+	}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+.vertical1{
+	height:0;
+	width:0;
+	display:inline-block;
+	vertical-align:middle;
+	}
+input,textarea,select,option,fieldset,legend{
+	margin:0;
+	padding:0;
+	border:0;
+	background:none ;
+	vertical-align: top;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
