@@ -212,14 +212,14 @@ h6 {
 .m-book-list ul {
   margin-bottom: 0.75rem;
 }
+.m-book-list ul li:nth-of-type(3) {
+  margin: 0;
+}
 .m-book-list li {
   position: relative;
   float: left;
   width: 30%;
   margin-right: 5%;
-}
-.m-book-list .margin0 {
-  margin: 0;
 }
 a.pic {
   display: block;
